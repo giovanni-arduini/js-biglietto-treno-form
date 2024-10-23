@@ -6,16 +6,20 @@ const formElement = document.querySelector("form");
 // console.log(travelLength);
 // console.log(userAge);
 // console.log(submitButton);
+const discountJunior = 0.2;
+const discountSenior = 0.4;
 
 formElement.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("ho inviato il modulo");
+
+  const travelLength = travelLengthElement.value;
+  console.log(travelLength);
+  const userAge = userAgeElement.value;
+  console.log(userAge);
+  const standardPrice = travelLength * 0.21;
+  console.log(standardPrice);
 });
-
-const discountJunior = 0.2;
-const discountSenior = 0.4;
-
-// const standardPrice = travelLength * 0.21;
 
 // if (
 //   !isNaN(travelLength) &&
