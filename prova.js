@@ -27,6 +27,20 @@ formElement.addEventListener("submit", (event) => {
     travelLength >= 0 &&
     userAge >= 0
   ) {
+    // function calculateFinalPrice(userAge) {
+    //   return userAge < 18
+    //     ? `Il prezzo scontato per minorenni è di ${(
+    //         standardPrice -
+    //         standardPrice * discountJunior
+    //       ).toFixed(2)}`
+    //     : userAge >= 65
+    //     ? `Il prezzo scontato per Over65 è di ${(
+    //         standardPrice -
+    //         standardPrice * discountSenior
+    //       ).toFixed(2)}`
+    //     : `Il prezzo del tuo viaggio è di ${standardPrice.toFixed(2)}€`;
+    // }
+
     function calculateFinalPrice(userAge) {
       if (userAge < 18) {
         const price = `Il prezzo scontato per minorenni è di ${(
@@ -47,8 +61,8 @@ formElement.addEventListener("submit", (event) => {
         return price;
       }
     }
+
     console.log(calculateFinalPrice(userAge));
-    console.log(userAge);
     priceDisplay.classList.remove("d-none");
   } else {
     alert("I dati inseriti non sono validi!");
