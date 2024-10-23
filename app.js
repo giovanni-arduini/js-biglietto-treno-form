@@ -1,8 +1,11 @@
 console.log("Calcola il tuo Biglietto");
 
-// const travelLength = parseFloat(prompt("Inserire il numero di Km del viaggio")); //number
-
-// const userAge = parseInt(prompt("Inserire l'età del passeggero")); //number
+const travelLength = document.getElementById("travel-lenght");
+const userAge = document.getElementById("user-age");
+const submitButton = document.querySelector("button");
+// console.log(travelLength);
+// console.log(userAge);
+// console.log(submitButton);
 
 const discountJunior = 0.2;
 const discountSenior = 0.4;
@@ -30,5 +33,5 @@ if (
   }
   console.log(calculateFinalPrice(userAge));
 } else {
-  alert("I dati inseriti non sono validi!");
+  //   alert("I dati inseriti non sono validi!");
 }
