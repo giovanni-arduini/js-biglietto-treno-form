@@ -1,8 +1,8 @@
 console.log("Calcola il tuo Biglietto");
 
-const travelLength = document.getElementById("travel-lenght");
-const userAge = document.getElementById("user-age");
-const submitButton = document.querySelector("button");
+const travelLengthElement = document.getElementById("travel-lenght");
+const userAgeElement = document.getElementById("user-age");
+const submitButtonElement = document.querySelector("button");
 // console.log(travelLength);
 // console.log(userAge);
 // console.log(submitButton);
