@@ -22,6 +22,7 @@ formElement.addEventListener("submit", (event) => {
   if (
     !isNaN(travelLength) &&
     !isNaN(userAge) &&
+    userAge < 0 &&
     travelLength >= 0 &&
     userAge >= 0
   ) {
