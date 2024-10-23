@@ -43,6 +43,7 @@ formElement.addEventListener("submit", (event) => {
     console.log(calculateFinalPrice(userAge));
     console.log(userAge);
     priceDisplay.classList.remove("d-none");
+    priceDisplay.innerHTML += `${calculateFinalPrice(userAge)}`;
   } else {
     alert("I dati inseriti non sono validi!");
   }
