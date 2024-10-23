@@ -13,6 +13,8 @@ formElement.addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("ho inviato il modulo");
 
+  const priceDisplay = document.getElementById("price-display");
+  console.log(priceDisplay);
   const travelLength = travelLengthElement.value;
   //   console.log(travelLength);
   const userAge = userAgeElement.value;
@@ -22,7 +24,6 @@ formElement.addEventListener("submit", (event) => {
   if (
     !isNaN(travelLength) &&
     !isNaN(userAge) &&
-    userAge < 0 &&
     travelLength >= 0 &&
     userAge >= 0
   ) {
@@ -41,6 +42,7 @@ formElement.addEventListener("submit", (event) => {
     }
     console.log(calculateFinalPrice(userAge));
     console.log(userAge);
+    priceDisplay.classList.remove("d-none");
   } else {
     alert("I dati inseriti non sono validi!");
   }
